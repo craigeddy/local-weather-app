@@ -1,4 +1,5 @@
 import { AppPage } from './app.po'
+import { MaterialModule } from '../../src/app/material.module'
 
 describe('workspace-project App', () => {
   let page: AppPage

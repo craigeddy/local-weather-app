@@ -1,4 +1,5 @@
 import { browser, by, element } from 'protractor'
+import { MaterialModule } from '../../src/app/material.module'
 
 export class AppPage {
   navigateTo() {
@@ -6,6 +7,6 @@ export class AppPage {
   }
 
   getParagraphText() {
-    return element(by.css('app-root h1')).getText()
+    return element(by.css('app-root mat-toolbar span')).getText()
   }
 }
