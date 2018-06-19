@@ -22,7 +22,7 @@ export class CitySearchComponent implements OnInit {
             userInput[0],
             userInput.length > 1 ? userInput[1] : undefined
           )
-          .subscribe(data => console.log(data))
+          .subscribe(data => this.weatherService.currentWeather.next(data))
       }
     })
   }
